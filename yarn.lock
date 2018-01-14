@@ -2516,13 +2516,13 @@ jest-validate@^22.0.6:
     leven "^2.1.0"
     pretty-format "^22.0.6"
 
-jest-worker@22.0.3, jest-worker@^22.0.3:
+jest-worker@22.0.3:
   version "22.0.3"
   resolved "https://registry.yarnpkg.com/jest-worker/-/jest-worker-22.0.3.tgz#30433faca67814a8f80559f75ab2ceaa61332fd2"
   dependencies:
     merge-stream "^1.0.1"
 
-jest-worker@^22.0.6:
+jest-worker@^22.0.3, jest-worker@^22.0.6:
   version "22.0.6"
   resolved "https://registry.yarnpkg.com/jest-worker/-/jest-worker-22.0.6.tgz#1998ac7ab24a6eee4deddec76efe7742f2651504"
   dependencies:
@@ -3502,7 +3502,7 @@ react-devtools-core@3.0.0:
     shell-quote "^1.6.1"
     ws "^2.0.3"
 
-react-native@0.52.0:
+react-native@^0.52.0:
   version "0.52.0"
   resolved "https://registry.yarnpkg.com/react-native/-/react-native-0.52.0.tgz#9784663a2aa40b30c87d4c9c06ef26cf8d419d91"
   dependencies:

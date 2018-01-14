@@ -36,7 +36,7 @@
 		2DCD954D1E0B4F2C00145EB5 /* RodditTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* RodditTests.m */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
-		DDDAF963200BEE1400BEC553 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
+		DDDAFA23200BF1B900BEC553 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -257,56 +257,56 @@
 			remoteGlobalIDString = 358F4ED71D1E81A9004DF814;
 			remoteInfo = RCTBlob;
 		};
-		DDDAF989200BEE1500BEC553 /* PBXContainerItemProxy */ = {
+		DDDAFA49200BF1B900BEC553 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = EBF21BDC1FC498900052F4D5;
 			remoteInfo = jsinspector;
 		};
-		DDDAF98B200BEE1500BEC553 /* PBXContainerItemProxy */ = {
+		DDDAFA4B200BF1B900BEC553 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = EBF21BFA1FC4989A0052F4D5;
 			remoteInfo = "jsinspector-tvOS";
 		};
-		DDDAF98D200BEE1500BEC553 /* PBXContainerItemProxy */ = {
+		DDDAFA4D200BF1B900BEC553 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 139D7ECE1E25DB7D00323FB7;
 			remoteInfo = "third-party";
 		};
-		DDDAF98F200BEE1500BEC553 /* PBXContainerItemProxy */ = {
+		DDDAFA4F200BF1B900BEC553 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 3D383D3C1EBD27B6005632C8;
 			remoteInfo = "third-party-tvOS";
 		};
-		DDDAF991200BEE1500BEC553 /* PBXContainerItemProxy */ = {
+		DDDAFA51200BF1B900BEC553 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 139D7E881E25C6D100323FB7;
 			remoteInfo = "double-conversion";
 		};
-		DDDAF993200BEE1500BEC553 /* PBXContainerItemProxy */ = {
+		DDDAFA53200BF1B900BEC553 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 3D383D621EBD27B9005632C8;
 			remoteInfo = "double-conversion-tvOS";
 		};
-		DDDAF995200BEE1500BEC553 /* PBXContainerItemProxy */ = {
+		DDDAFA55200BF1B900BEC553 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 9936F3131F5F2E4B0010BF04;
 			remoteInfo = privatedata;
 		};
-		DDDAF997200BEE1500BEC553 /* PBXContainerItemProxy */ = {
+		DDDAFA57200BF1B900BEC553 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
 			proxyType = 2;
@@ -358,7 +358,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */,
-				DDDAF963200BEE1400BEC553 /* libRCTAnimation.a in Frameworks */,
+				DDDAFA23200BF1B900BEC553 /* libRCTAnimation.a in Frameworks */,
 				146834051AC3E58100842450 /* libReact.a in Frameworks */,
 				00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */,
 				00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */,
@@ -501,14 +501,14 @@
 				3DAD3EAB1DF850E9000B6D8A /* libcxxreact.a */,
 				3DAD3EAD1DF850E9000B6D8A /* libjschelpers.a */,
 				3DAD3EAF1DF850E9000B6D8A /* libjschelpers.a */,
-				DDDAF98A200BEE1500BEC553 /* libjsinspector.a */,
-				DDDAF98C200BEE1500BEC553 /* libjsinspector-tvOS.a */,
-				DDDAF98E200BEE1500BEC553 /* libthird-party.a */,
-				DDDAF990200BEE1500BEC553 /* libthird-party.a */,
-				DDDAF992200BEE1500BEC553 /* libdouble-conversion.a */,
-				DDDAF994200BEE1500BEC553 /* libdouble-conversion.a */,
-				DDDAF996200BEE1500BEC553 /* libprivatedata.a */,
-				DDDAF998200BEE1500BEC553 /* libprivatedata-tvOS.a */,
+				DDDAFA4A200BF1B900BEC553 /* libjsinspector.a */,
+				DDDAFA4C200BF1B900BEC553 /* libjsinspector-tvOS.a */,
+				DDDAFA4E200BF1B900BEC553 /* libthird-party.a */,
+				DDDAFA50200BF1B900BEC553 /* libthird-party.a */,
+				DDDAFA52200BF1B900BEC553 /* libdouble-conversion.a */,
+				DDDAFA54200BF1B900BEC553 /* libdouble-conversion.a */,
+				DDDAFA56200BF1B900BEC553 /* libprivatedata.a */,
+				DDDAFA58200BF1B900BEC553 /* libprivatedata-tvOS.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -975,60 +975,60 @@
 			remoteRef = ADBDB9261DFEBF0700ED6528 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		DDDAF98A200BEE1500BEC553 /* libjsinspector.a */ = {
+		DDDAFA4A200BF1B900BEC553 /* libjsinspector.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libjsinspector.a;
-			remoteRef = DDDAF989200BEE1500BEC553 /* PBXContainerItemProxy */;
+			remoteRef = DDDAFA49200BF1B900BEC553 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		DDDAF98C200BEE1500BEC553 /* libjsinspector-tvOS.a */ = {
+		DDDAFA4C200BF1B900BEC553 /* libjsinspector-tvOS.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = "libjsinspector-tvOS.a";
-			remoteRef = DDDAF98B200BEE1500BEC553 /* PBXContainerItemProxy */;
+			remoteRef = DDDAFA4B200BF1B900BEC553 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		DDDAF98E200BEE1500BEC553 /* libthird-party.a */ = {
+		DDDAFA4E200BF1B900BEC553 /* libthird-party.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = "libthird-party.a";
-			remoteRef = DDDAF98D200BEE1500BEC553 /* PBXContainerItemProxy */;
+			remoteRef = DDDAFA4D200BF1B900BEC553 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		DDDAF990200BEE1500BEC553 /* libthird-party.a */ = {
+		DDDAFA50200BF1B900BEC553 /* libthird-party.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = "libthird-party.a";
-			remoteRef = DDDAF98F200BEE1500BEC553 /* PBXContainerItemProxy */;
+			remoteRef = DDDAFA4F200BF1B900BEC553 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		DDDAF992200BEE1500BEC553 /* libdouble-conversion.a */ = {
+		DDDAFA52200BF1B900BEC553 /* libdouble-conversion.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = "libdouble-conversion.a";
-			remoteRef = DDDAF991200BEE1500BEC553 /* PBXContainerItemProxy */;
+			remoteRef = DDDAFA51200BF1B900BEC553 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		DDDAF994200BEE1500BEC553 /* libdouble-conversion.a */ = {
+		DDDAFA54200BF1B900BEC553 /* libdouble-conversion.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = "libdouble-conversion.a";
-			remoteRef = DDDAF993200BEE1500BEC553 /* PBXContainerItemProxy */;
+			remoteRef = DDDAFA53200BF1B900BEC553 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		DDDAF996200BEE1500BEC553 /* libprivatedata.a */ = {
+		DDDAFA56200BF1B900BEC553 /* libprivatedata.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libprivatedata.a;
-			remoteRef = DDDAF995200BEE1500BEC553 /* PBXContainerItemProxy */;
+			remoteRef = DDDAFA55200BF1B900BEC553 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		DDDAF998200BEE1500BEC553 /* libprivatedata-tvOS.a */ = {
+		DDDAFA58200BF1B900BEC553 /* libprivatedata-tvOS.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = "libprivatedata-tvOS.a";
-			remoteRef = DDDAF997200BEE1500BEC553 /* PBXContainerItemProxy */;
+			remoteRef = DDDAFA57200BF1B900BEC553 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
