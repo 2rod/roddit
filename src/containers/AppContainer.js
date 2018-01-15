@@ -24,7 +24,6 @@ class AppContainer extends Component<{}> {
     .then(data => data.data.children)
     .then(posts => {
       this.props.setPosts(posts);
-      console.log('posts', posts);
     });
   }
 

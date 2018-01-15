@@ -17,12 +17,18 @@ export default class Post extends Component<{}> {
     return (
       <View style={styles.rowContainer}>
         {thumb}
-        <Text style={styles.postText}>{post.created}</Text>
-        <Text style={styles.postText}>{post.title}</Text>
-        <View>
-          <Text style={styles.postText}>{post.author}</Text>
-          <Text style={styles.postText}>{post.score}</Text>
-          <Text style={styles.postText}>{post.num_comments}</Text>
+        <View style={styles.colContainer}>
+          <View>
+            <Text style={styles.dateText}>Submitted {post.created}</Text>
+          </View>
+          <View>
+            <Text style={styles.postTitle}>{post.title}</Text>
+          </View>
+          <View style={styles.rowContainer}>
+            <Text style={styles.statsText}>by {post.author}</Text>
+            <Text style={styles.statsText}>Score: {post.score}</Text>
+            <Text style={styles.statsText}>{post.num_comments} comments</Text>
+          </View>
         </View>
       </View>
     );
@@ -31,9 +37,20 @@ export default class Post extends Component<{}> {
 
 const styles = StyleSheet.create({
   postText: {
-    color: '#333333',
-    fontSize: 12,
     flex: 1
+  },
+  postTitle: {
+    fontSize: 14,
+    fontWeight: 'bold',
+    padding: 10
+  },
+  dateText: {
+    textAlign: 'right',
+    fontSize: 10
+  },
+  statsText: {
+    fontSize: 10,
+    flex: 0.33
   },
   thumbnail: {
     width: 20,
@@ -41,6 +58,12 @@ const styles = StyleSheet.create({
   },
   rowContainer: {
     flexDirection: 'row',
-    padding: 10
+    padding: 10,
+    flex: 1
+  },
+  colContainer: {
+    flexDirection: 'column',
+    padding: 10,
+    flex: 1
   },
 });
