@@ -7,7 +7,7 @@ import {
   ActivityIndicator
 } from 'react-native';
 
-import { getPosts, setPosts } from '../actions';
+import { setPosts, isLoading } from '../actions';
 
 import PostList from '../components/PostList';
 
@@ -47,13 +47,12 @@ class AppContainer extends Component<{}> {
 
 const mapStateToProps = (state) => ({
   posts: state.posts,
-  category: state.category,
   isLoading: state.isLoading
 });
 
 const mapDispatchToProps = (dispatch) => ({
-  getPosts: (category) => dispatch(getPosts(category)),
-  setPosts: (posts) => dispatch(setPosts(posts))
+  setPosts: (posts) => dispatch(setPosts(posts)),
+  isLoading: () => dispatch(isLoading())
 });
 
 const styles = StyleSheet.create({
