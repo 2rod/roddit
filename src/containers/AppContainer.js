@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import {
   StyleSheet,
   Text,
@@ -6,20 +7,31 @@ import {
   ActivityIndicator
 } from 'react-native';
 
-import { getPosts } from '../actions';
+import { getPosts, setPosts } from '../actions';
 
-import PostList from '../PostList';
+import PostList from '../components/PostList';
 
-@connect(mapStateToProps, mapDispatchToProps)
-export default class App extends Component<{}> {
+class AppContainer extends Component<{}> {
   constructor(props) {
     super(props);
-    // TODO: fetch initial set of posts
+    // fetch initial set of posts
+    this.fetchRedditPosts('new');
+  }
+
+  fetchRedditPosts (category) {
+    fetch('https://api.reddit.com/r/programming/' + category)
+    .then(response => response.json())
+    .then(data => data.data.children)
+    .then(posts => {
+      this.props.setPosts(posts);
+      console.log('posts', posts);
+    });
   }
 
   render() {
     const loader = this.props.isLoading ?
       <ActivityIndicator size='large' /> : null;
+    const postContent = this.props.posts ? <PostList posts={this.props.posts}/> : '';
     return (
       <View>
         <View style={styles.container}>
@@ -35,7 +47,7 @@ export default class App extends Component<{}> {
         </View>
         <View>
           <Text>/r/Programming</Text>
-          <PostList posts={this.props.posts}/>
+          {postContent}
         </View>
         {loader}
       </View>
@@ -50,7 +62,8 @@ const mapStateToProps = (state) => ({
 });
 
 const mapDispatchToProps = (dispatch) => ({
-  getPosts: (category) => dispatch(getPosts(category))
+  getPosts: (category) => dispatch(getPosts(category)),
+  setPosts: (posts) => dispatch(setPosts(posts))
 });
 
 const styles = StyleSheet.create({
@@ -71,3 +84,5 @@ const styles = StyleSheet.create({
     marginBottom: 5,
   },
 });
+
+export default connect(mapStateToProps, mapDispatchToProps)(AppContainer);
