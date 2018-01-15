@@ -1,4 +1,4 @@
-import as types from '../actions/types';
+import * as types from '../actions/types';
 
 const defaultState = {
   posts: [],
@@ -6,8 +6,8 @@ const defaultState = {
   isLoading: false
 };
 
-const posts = (state = defaultState, action) => {
-  switch(action.type) {
+const postsReducer = (state = defaultState, action) => {
+  switch (action.type) {
     case types.GET_POSTS:
       return {
         ...state,
@@ -27,4 +27,4 @@ const posts = (state = defaultState, action) => {
   }
 };
 
-export default posts;
+export default postsReducer;
