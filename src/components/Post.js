@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import moment from 'moment';
 
 import {
   StyleSheet,
@@ -9,17 +10,25 @@ import {
 } from 'react-native';
 
 export default class Post extends Component<{}> {
+
+  _calcDate = (timestamp) => {
+    const date = new Date(timestamp*1000);
+    const dateMoment = moment(date);
+    return moment([dateMoment.year(),dateMoment.month(),dateMoment.date()]).fromNow();
+  };
+
   render() {
     const post = this.props.post.data;
     const thumb = post.thumbnail ?
       <Image style={styles.thumbnail} source={{ uri: post.thumbnail }}/>
       : null;
+    const submitted = this._calcDate(post.created_utc);
     return (
       <View style={styles.rowContainer}>
         {thumb}
         <View style={styles.colContainer}>
           <View>
-            <Text style={styles.dateText}>Submitted {post.created}</Text>
+            <Text style={styles.dateText}>Submitted {submitted}</Text>
           </View>
           <View>
             <Text style={styles.postTitle}>{post.title}</Text>
