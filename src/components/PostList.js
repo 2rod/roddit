@@ -22,6 +22,7 @@ class ListItem extends React.PureComponent {
         <View>
           <Post post={this.props.item} />
         </View>
+        <View style={styles.separator} />
       </TouchableOpacity>
     );
   }
@@ -68,3 +69,10 @@ export default class PostList extends Component<{}> {
     );
   }
 }
+
+const styles = StyleSheet.create({
+  separator: {
+    height: 1,
+    backgroundColor: '#333'
+  }
+})
