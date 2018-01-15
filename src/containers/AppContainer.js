@@ -14,6 +14,9 @@ import PostList from '../components/PostList';
 class AppContainer extends Component<{}> {
   constructor(props) {
     super(props);
+  }
+
+  componentDidMount() {
     // fetch initial set of posts
     this.fetchRedditPosts('new');
   }
