@@ -28,21 +28,6 @@ class ListItem extends React.PureComponent {
   }
 }
 
-class PostWebView extends Component<{}> {
-  openURL(url) {
-    Linking.openURL(url);
-  }
-
-  render() {
-    console.log('here');
-    return (
-      <WebView
-        source={{uri: this.openURL(this.props.url)}}
-      />
-    );
-  }
-}
-
 export default class PostList extends Component<{}> {
 
   _keyExtractor = (item, index) => item.data.id;
