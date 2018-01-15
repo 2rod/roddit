@@ -6,6 +6,7 @@ import {
   Text,
   FlatList,
   TouchableOpacity,
+  Linking
 } from 'react-native';
 
 import Post from './Post';
@@ -26,13 +27,27 @@ class ListItem extends React.PureComponent {
   }
 }
 
+class PostWebView extends Component<{}> {
+  openURL(url) {
+    Linking.openURL(url);
+  }
+
+  render() {
+    console.log('here');
+    return (
+      <WebView
+        source={{uri: this.openURL(this.props.url)}}
+      />
+    );
+  }
+}
+
 export default class PostList extends Component<{}> {
 
   _keyExtractor = (item, index) => item.data.id;
 
-  _onPressItem = (url: string) => {
-    //TODO: open post url in WebView
-    console.log('url', url);
+  _onPressItem = (url) => {
+    Linking.openURL(url);
   };
 
   _renderItem = ({item, index}) => (
