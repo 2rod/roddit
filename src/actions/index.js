@@ -1,12 +1,7 @@
 import * as types from './types';
 
-export const getPosts = (category) => ({
-  type: types.GET_POSTS,
-  category
-});
-
 export const setPosts = (posts) => ({
-  type: types.GET_POSTS_COMPLETE,
+  type: types.SET_POSTS,
   posts
 })
 

@@ -1,4 +1,3 @@
-export const GET_POSTS = 'GET_POSTS';
-export const GET_POSTS_COMPLETE = 'GET_POSTS_COMPLETE';
+export const SET_POSTS = 'SET_POSTS';
 
 export const IS_LOADING = 'IS_LOADING';
