@@ -34,19 +34,10 @@ class AppContainer extends Component<{}> {
     const postContent = this.props.posts ? <PostList posts={this.props.posts}/> : '';
     return (
       <View>
-        <View style={styles.container}>
-          <Text style={styles.welcome}>
-            Roddit
-          </Text>
-          <Text style={styles.instructions}>
-            A minimalist Reddit reader app
-          </Text>
-          <Text style={styles.instructions}>
-            Built by Rod
-          </Text>
-        </View>
         <View>
-          <Text>/r/Programming</Text>
+          <Text style={styles.heading}>/r/Programming</Text>
+        </View>
+        <View style={styles.container}>
           {postContent}
         </View>
         {loader}
@@ -68,20 +59,15 @@ const mapDispatchToProps = (dispatch) => ({
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#F5FCFF',
   },
-  welcome: {
+  heading: {
     fontSize: 20,
     textAlign: 'center',
     margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
   },
 });
 
