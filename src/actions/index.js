@@ -5,6 +5,11 @@ export const getPosts = (category) => ({
   category
 });
 
+export const setPosts = (posts) => ({
+  type: types.GET_POSTS_COMPLETE,
+  posts
+})
+
 export const isLoading = () => ({
   type: types.IS_LOADING
 });
