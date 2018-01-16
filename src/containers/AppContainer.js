@@ -30,10 +30,14 @@ class AppContainer extends Component<{}> {
     });
   }
 
+  _handleRefresh = () => {
+    this.fetchRedditPosts(this.props.category);
+  }
+
   render() {
     const loader = this.props.isLoading ?
       <ActivityIndicator size='large' /> : null;
-    const postContent = this.props.posts ? <PostList posts={this.props.posts}/> : '';
+    const postContent = this.props.posts ? <PostList posts={this.props.posts} onRefresh={this._handleRefresh} /> : '';
     return (
       <View>
         <View>
