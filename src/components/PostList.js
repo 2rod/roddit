@@ -22,7 +22,6 @@ class ListItem extends React.PureComponent {
         <View>
           <Post post={this.props.item} />
         </View>
-        <View style={styles.separator} />
       </TouchableOpacity>
     );
   }
@@ -50,12 +49,17 @@ export default class PostList extends Component<{}> {
     />
   );
 
+  _renderSeparator = () => {
+    return <View style={styles.separator} />;
+  };
+
   render() {
     return (
       <FlatList
         data={this.props.posts}
         keyExtractor={this._keyExtractor}
         renderItem={this._renderItem}
+        ItemSeparatorComponent={this._renderSeparator}
         onRefresh={this.props.onRefresh}
         refreshing={this.state.refreshing}
       />
