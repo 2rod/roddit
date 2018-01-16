@@ -26,7 +26,7 @@ class AppContainer extends Component<{}> {
     .then(response => response.json())
     .then(data => data.data.children)
     .then(posts => {
-      this.props.setPosts(posts);
+      this.props.setPosts(posts, category);
     });
   }
 
@@ -50,11 +50,12 @@ class AppContainer extends Component<{}> {
 
 const mapStateToProps = (state) => ({
   posts: state.posts,
+  category: state.category,
   isLoading: state.isLoading
 });
 
 const mapDispatchToProps = (dispatch) => ({
-  setPosts: (posts) => dispatch(setPosts(posts)),
+  setPosts: (posts, category) => dispatch(setPosts(posts, category)),
   isLoading: () => dispatch(isLoading())
 });
 
