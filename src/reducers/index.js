@@ -2,6 +2,7 @@ import * as types from '../actions/types';
 
 const defaultState = {
   posts: [],
+  category: '',
   isLoading: false
 };
 
@@ -11,6 +12,7 @@ const postsReducer = (state = defaultState, action) => {
       return {
         ...state,
         posts: action.posts,
+        category: action.category,
         isLoading: false
       }
       break;
