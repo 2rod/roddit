@@ -29,6 +29,12 @@ class ListItem extends React.PureComponent {
 }
 
 export default class PostList extends Component<{}> {
+  constructor(props) {
+    super(props);
+    this.state = {
+      refreshing: false
+    }
+  }
 
   _keyExtractor = (item, index) => item.data.id;
 
@@ -50,6 +56,8 @@ export default class PostList extends Component<{}> {
         data={this.props.posts}
         keyExtractor={this._keyExtractor}
         renderItem={this._renderItem}
+        onRefresh={this.props.onRefresh}
+        refreshing={this.state.refreshing}
       />
     );
   }
